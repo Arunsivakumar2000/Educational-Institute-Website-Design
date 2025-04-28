@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="./Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="./Images/logo.png" alt=""></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Certificate & Online Programs For 2025</h1>
+</section>
+
+<!-- ---------------------- blog page content --------------------- -->
+
+<section class="blog-content">
+
+    <div class="row">
+        <div class="blog-left">
+            <img src="Images/certificate.jpg" alt="">
+            <h2>Our Certificate & Online Programs For 2025</h2>
+            <p>Our Certificate and Online Programs for 2025 are designed to provide flexible, high-quality education to learners around the world. Whether you're looking to upskill in your current career or explore new fields, our programs offer an accessible path to success. With a variety of disciplines ranging from business and technology to healthcare and the arts, our online courses are crafted by expert faculty to ensure that you receive the same rigorous education as you would in a traditional classroom, all from the comfort of your own home.</p>
+            <br>
+            <p>In 2025, our Certificate and Online Programs are more dynamic than ever, tailored to meet the needs of working professionals, lifelong learners, and career changers. These programs offer a blend of theory and practical skills, ensuring that students are not only prepared for today’s job market but are also positioned to lead in their industries. With the flexibility to study at your own pace and on your schedule, you can balance your education with personal and professional commitments, all while gaining valuable credentials that enhance your career prospects.</p>
+            <br>
+            <p>Our online certificate programs for 2025 provide learners from around the world with the opportunity to pursue their educational goals without geographic limitations. With access to a global network of students, you’ll engage with diverse perspectives and gain insights that prepare you for success in an interconnected world. From interactive online courses to real-world projects and networking opportunities, our programs are designed to be as engaging as they are informative, ensuring that your education is both relevant and enriching.</p>
+            <br>
+            <p>As we look ahead to 2025, our Certificate and Online Programs are at the forefront of education innovation. We offer courses in emerging fields such as artificial intelligence, data science, and sustainable business practices, ensuring that students are equipped with the knowledge and skills needed to tackle the challenges of tomorrow. Our programs are constantly updated to reflect the latest industry trends, and our instructors bring real-world experience to the virtual classroom, making your learning experience both relevant and impactful.</p>
+            <br>
+            <p>In 2025, our Certificate and Online Programs are built with your success in mind. We understand the importance of flexibility in today’s fast-paced world, and our programs are designed to fit seamlessly into your lifestyle. Whether you're looking to enhance your current skill set or pursue a completely new career path, our expert instructors and comprehensive resources will guide you every step of the way. The certifications you earn will open doors to new career opportunities, giving you the confidence to excel in any field.</p>
+
+            <div class="comment-box">
+                
+                <h3>Leave a comment</h3>
+
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Artifical Intelligence</span>
+                <span>41</span>
+            </div>
+            <div>
+                <span>Power BI</span>
+                <span>29</span>
+            </div>
+            <div>
+                <span>Data Structure</span>
+                <span>17</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- -------------------Footer----------------------- -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are a diverse community of learners, committed to providing high-quality education that empowers students to succeed in <br>an ever-changing world. At our college, we foster a supportive environment where innovation,<br> creativity, and academic excellence thrive.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Oxford University</p>
+</section>
+
+<!-- -----------JavaScript for Toggle Menu-------- -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
+
